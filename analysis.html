@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisys | Automação Industrial</title>
+
+<style>
+:root{
+    --azul-anil:#102a63;
+    --azul-destaque:#2da9ff;
+    --branco:#f5f6f7;
+    --cinza:#c5c9d4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(5,15,35,0.92), rgba(5,15,35,0.92)),
+    url('https://img.freepik.com/vetores-premium/fundo-de-conceito-de-tecnologia-futura-de-circuito-cibernetico_42077-15414.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:var(--branco);
+}
+
+/* HEADER */
+
+header{
+    background:rgba(0,0,0,0.85);
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid var(--azul-destaque);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:var(--azul-destaque);
+    letter-spacing:1px;
+}
+
+nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:var(--cinza);
+    font-weight:500;
+}
+
+nav a:hover{
+    color:var(--azul-destaque);
+}
+
+/* HERO */
+
+.hero{
+    padding:120px 10%;
+    background:rgba(0,0,0,0.65);
+}
+
+.hero h1{
+    font-size:48px;
+    color:var(--azul-destaque);
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* SERVIÇOS */
+
+.servicos{
+    padding:80px 10%;
+    background:rgba(16,42,99,0.85);
+}
+
+.servicos h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:50px;
+    color:var(--azul-destaque);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+    backdrop-filter:blur(5px);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:var(--azul-destaque);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--azul-destaque);
+}
+
+.card p{
+    color:var(--cinza);
+}
+
+/* LOCALIZAÇÃO */
+
+.localizacao{
+    padding:80px 10%;
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+}
+
+.localizacao h2{
+    font-size:30px;
+    margin-bottom:20px;
+    color:var(--azul-destaque);
+}
+
+.endereco{
+    margin-bottom:30px;
+    color:var(--cinza);
+    font-size:18px;
+}
+
+iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000814;
+    padding:30px;
+    text-align:center;
+    font-size:14px;
+    color:var(--cinza);
+    border-top:1px solid var(--azul-destaque);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Análisys</div>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#localizacao">Localização</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Automação e Calibração Industrial</h1>
+    <p>
+        A Análisys atua com automação industrial, integração de sistemas,
+        calibração de instrumentos e controle de processos industriais.
+        Tecnologia, precisão e confiabilidade para elevar o desempenho da sua operação.
+    </p>
+</section>
+
+<section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Automação Industrial</h3>
+            <p>Desenvolvimento de projetos com CLPs, sensores, painéis elétricos e integração de sistemas industriais.</p>
+        </div>
+
+        <div class="card">
+            <h3>Calibração de Equipamentos</h3>
+            <p>Calibração técnica de instrumentos industriais com foco em precisão e conformidade normativa.</p>
+        </div>
+
+        <div class="card">
+            <h3>Manutenção Técnica</h3>
+            <p>Serviços de manutenção preventiva e corretiva em sistemas automatizados e equipamentos industriais.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoria e Otimização</h3>
+            <p>Análise e melhoria de processos industriais para aumento de produtividade e redução de falhas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="localizacao" id="localizacao">
+    <h2>Localização</h2>
+
+    <div class="endereco">
+        Avenida Luiz Tarquínio<br>
+        Lauro de Freitas – Bahia<br>
+        Em frente à Yamaha Motors<br>
+        Número será informado em breve.
+    </div>
+
+    <iframe 
+    src="https://www.google.com/maps?q=Avenida+Luiz+Tarquínio,+Lauro+de+Freitas,+Bahia&output=embed">
+    </iframe>
+</section>
+
+<footer>
+    © 2026 Análisys Automação Industrial — Todos os direitos reservados
+</footer>
+
+</body>
+</html>
